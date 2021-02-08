@@ -1,10 +1,9 @@
 from flask import Flask
 server = Flask(__name__)
-import sys
 
 @server.route("/")
 def hello():
-   print(sys.version)
+   print("1")
    return "Hello World!"
 
 if __name__ == "__main__":
