@@ -6,7 +6,7 @@ on:
 
 jobs:
   test_code:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     strategy:
       matrix:
         python-version: [3.8]
