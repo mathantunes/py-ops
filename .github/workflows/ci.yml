@@ -2,7 +2,7 @@ name: Continuous integration
 
 on:
   pull_request:
-    branches: [master]
+    branches: [master,main]
 
 jobs:
   test_code:
