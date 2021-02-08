@@ -2,7 +2,7 @@ name: Continuous integration
 
 on:
   pull_request:
-    branches: [master,main]
+    branches: [master, main]
 
 jobs:
   test_code:
@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{matrix.python-version}}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python-version}}
       - name: Install deps
-      run: |
-        pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
       - name: Test with unittest
-      run: |
-        python ./src/hello_test.py
+        run: |
+          python ./src/hello_test.py
