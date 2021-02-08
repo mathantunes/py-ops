@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build container image
-        uses: actions/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
